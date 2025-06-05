@@ -4,9 +4,9 @@
 *	Plugin URI:  https://herothemes.com/plugins/heroic-table-of-contents/?utm_source=wprepo&utm_medium=link&utm_campaign=heroic-toc
 *	Description: Heroic Table of Contents is the easiest way to add a Table of Contents to your site.
 *	Author: HeroThemes
-*	Version: 1.2.2
-*	Build: 135
-*   Build Date: 2022-05-19 2:48:56PM
+*	Version: 1.2.3
+*	Build: 151
+*   Build Date: 2025-06-05 09:30:28
 *	Author URI: https://herothemes.com/?utm_source=wprepo&utm_medium=link&utm_campaign=heroic-toc
 *	Text Domain: ht-toc
 */

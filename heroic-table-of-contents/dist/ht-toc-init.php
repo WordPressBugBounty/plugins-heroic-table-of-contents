@@ -18,9 +18,11 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 if ( ! function_exists( 'ht_toc_cgb_block_editor_assets' ) ) {
 	function ht_toc_cgb_block_editor_assets() {
-		// Only load this block in the post editor (should not operate on widgets or FSE).
+		// Load this block in both post editor and site editor
 		$current_screen = function_exists('get_current_screen') ? get_current_screen() : false;
-		if( !$current_screen || !is_a($current_screen, 'WP_Screen') || 'post' != $current_screen->base ){
+		
+		// Allow in post editor and site editor, but exclude from widgets screen
+		if( $current_screen && is_a($current_screen, 'WP_Screen') && 'widgets' === $current_screen->base ){
 			return;
 		}
 		
@@ -40,6 +42,9 @@ if ( ! function_exists( 'ht_toc_cgb_block_editor_assets' ) ) {
 			array( 'wp-edit-blocks' ),
 			filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' )
 		);
+
+		// Add editor styles to iframe for proper block rendering
+		add_editor_style( plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ) );
 
 		// Plugin script localization (passes info from PHP to JS).
 		wp_localize_script(

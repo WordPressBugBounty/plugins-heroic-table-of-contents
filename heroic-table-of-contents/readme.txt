@@ -2,10 +2,10 @@
 Contributors: herothemes, richardlong, chrishadley
 Tags: toc, table of contents, index, navigation, seo
 Requires at least: 6.1
-Tested up to: 6.5.3
+Tested up to: 6.8.1
 Requires PHP: 7.4
-Version: 1.2.2
-Stable tag: 1.2.2
+Version: 1.2.3
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -95,6 +95,12 @@ If you have trouble with the Heroic Table of Contents WordPress plugin, you can 
 7. Add custom links to the Table of Contents (beta feature)
 
 == Changelog ==
+
+= 1.2.3 =
+(5 Jun 2025)
+
+(Improved) Post support with sticky Table of Contents
+(Updated) Improvements and testing for WordPress 6.8
 
 = 1.2.2 =
 (22 May 2024)
