@@ -1,17 +1,17 @@
-# Copyright (C) 2025 HeroThemes
+# Copyright (C) 2026 HeroThemes
 # This file is distributed under the same license as the Heroic Table of Contents plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Heroic Table of Contents 1.2.3\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ht-toc\n"
+"Project-Id-Version: Heroic Table of Contents 1.2.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/heroic-table-of-contents\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-06-05T10:30:27+01:00\n"
+"POT-Creation-Date: 2026-01-07T12:28:58+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: ht-toc\n"
 
 #. Plugin Name of the plugin

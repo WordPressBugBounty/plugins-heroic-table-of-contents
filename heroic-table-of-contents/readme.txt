@@ -1,11 +1,11 @@
 === Heroic Table of Contents ===
 Contributors: herothemes, richardlong, chrishadley
 Tags: toc, table of contents, index, navigation, seo
-Requires at least: 6.1
-Tested up to: 6.8.1
-Requires PHP: 7.4
-Version: 1.2.3
-Stable tag: 1.2.3
+Requires at least: 6.7
+Tested up to: 6.9.0
+Requires PHP: 8.0
+Version: 1.2.7
+Stable tag: 1.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,8 @@ Features:-
 * Place the contents section anywhere.
 * Choose bulleted, numbered or plain lists
 * Use multiple Table of Contents blocks to break up and sub-index lengthy content.
+* Works with templates and individual posts/pages with Template Mode
+* Automatic template detection with helpful context-aware guidance
 * Mobile friendly
 * SEO friendly
 
@@ -76,6 +78,10 @@ Heroic Table of Contents is designed to work with any WordPress theme.
 
 Yes, Heroic Table of Contents has full translation and localization support.
 
+= When should I enable Template Mode? =
+
+Enable "Template Mode (Post Content Scope)" when adding the Table of Contents block to post templates, page templates, or custom post type templates. Leave it disabled when adding the block directly to individual posts or pages. Template Mode tells the block to scan for headings within post-content blocks, which is necessary for template-based usage. The plugin will automatically detect if you're working in a template and show a helpful warning if Template Mode needs to be enabled.
+
 = I have a question =
 
 Feel free to contact us directly via [herothemes.com/contact/](https://herothemes.com/contact/?utm_source=wprepo&utm_medium=link&utm_campaign=heroic-toc) for any questions.
@@ -95,6 +101,40 @@ If you have trouble with the Heroic Table of Contents WordPress plugin, you can 
 7. Add custom links to the Table of Contents (beta feature)
 
 == Changelog ==
+
+= 1.2.7 =
+(7 Jan 2026)
+
+(Fixed) Customizer compatibility with certain third party themes - ToC JavaScript skipped in Customizer while CSS remains for proper styling
+
+= 1.2.6 =
+(17 Nov 2025)
+
+(Fixed) Table of Contents submenus now automatically collapse and expand based on scroll position in post mode
+(Fixed) Scan levels (heading selection H1-H6) now work correctly on the frontend - headings are properly filtered based on selected levels
+(Fixed) Editor styles no longer load on frontend - prevents conflicts with other plugins and WordPress components
+(Fixed) Block validation errors when opening posts with older TOC blocks - added proper deprecation handling
+(Improved) Proper nested list HTML structure for better accessibility and styling
+
+= 1.2.5 =
+(26 Oct 2025)
+
+(Fixed) Table of Contents now displays correctly on your live site without editor buttons or preview content showing
+(Fixed) Text size in the Table of Contents now appears correctly on the frontend
+(Fixed) Preview sample content no longer appears on published pages and posts
+(Fixed) Block editor validation errors when editing templates
+(Improved) Table of Contents now works perfectly on mobile and tablet devices with proper responsive display
+(Improved) Renamed Is Single Post to Template Mode (Post Content Scope) with clear descriptive help text
+(Improved) Added context-aware guidance to help users know when to enable Template Mode for templates
+(Improved) Automatic template detection now shows helpful warning when Template Mode should be enabled
+(Improved) Enhanced empty state message with tips for template usage
+
+= 1.2.4 =
+(16 Oct 2025)
+
+(Fixed) Site editor preview mode now correctly displays sample content for post templates
+(Fixed) Console warning about CSS being added to iframe incorrectly
+(Improved) Post support with Update Font Size
 
 = 1.2.3 =
 (5 Jun 2025)
